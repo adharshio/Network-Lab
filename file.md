@@ -152,3 +152,73 @@ MAC Address: F4:6B:8C:8C:ED:40 (Unknown)
 Nmap done: 1 IP address (1 host up) scanned in 0.17 seconds
 ~ ❯ ls                                                                                                                                  15:29
 class1-NL  desktop  Desktop  Documents	Downloads  gayathri_09	
+
+
+sudo tcpdump -A tcp                                                                                                 15:38
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on enp2s0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+15:41:10.840408 IP lb-140-82-114-25-iad.github.com.https > programming-lab-09.40444: Flags [P.], seq 2530350989:2530351014, ack 1923827637, win 1540, options [nop,nop,TS val 1906130 ecr 1001050646], length 25
+E..Mi.@.@..w.Rr.
+
+.3........r.G......6.....
+....;.........[..^..}u6.1......*.
+15:41:10.840547 IP programming-lab-09.40444 > lb-140-82-114-25-iad.github.com.https: Flags [P.], seq 1:30, ack 25, win 595, options [nop,nop,TS val 1001110652 ecr 1906130], length 29
+E..Q.*@.@.K.
+
+.3.Rr.....r.G........S	......
+;..|...........M4....4G..F/...SK.>v.|
+15:41:10.840711 IP lb-140-82-114-25-iad.github.com.https > programming-lab-09.40444: Flags [.], ack 30, win 1540, options [nop,nop,TS val 1906131 ecr 1001110652], length 0
+E..4i.@.@....Rr.
+
+.3........r.G.....PK.....
+....;..|
+15:41:11.375763 IP programming-lab-09.33036 > maa05s20-in-f2.1e100.net.https: Flags [P.], seq 4002290423:4002290462, ack 2402765957, win 532, options [nop,nop,TS val 957692996 ecr 1888405], length 39
+E..[a.@.@...
+
+.3...B.........7L.....P......
+9.<D........".YG.R..lA...z.c.:T.15...T....BG.3c
+15:41:11.375807 IP programming-lab-09.42750 > pnmaaa-az-in-f6.1e100.net.https: Flags [P.], seq 2622869819:2622869858, ack 482780828, win 532, options [nop,nop,TS val 2181095802 ecr 1888705], length 39
+E..[{#@.@.F.
+
+.3.........U.;........y......
+...z........"....X......".)k#. @v..|...9...M..#
+15:41:11.375816 IP programming-lab-09.51044 > 142.251.150.119.https: Flags [P.], seq 1182474121:1182474160, ack 1464534815, win 532, options [nop,nop,TS val 733700308 ecr 1888707], length 39
+E..[Z.@.@..'
+
+.3...w.d..F{..WK......0......
++.`........."......r<.c../.G7....P....7.....jd.
+15:41:11.392388 IP maa05s20-in-f2.1e100.net.https > programming-lab-09.33036: Flags [P.], seq 1:40, ack 39, win 1540, options [nop,nop,TS val 1906296 ecr 957692996], length 39
+E..[..@.@.!]...B
+
+.3.....7L.........o......
+...x9.<D....".!...p#5.. M._..y.he..
+S.|o....[..
+15:41:11.392390 IP pnmaaa-az-in-f6.1e100.net.https > programming-lab-09.42750: Flags [P.], seq 1:40, ack 39, win 1540, options [nop,nop,TS val 1906296 ecr 2181095802], length 39
+E..[.:@.@.......
+
+.3.........U.b....Rq.....
+...x...z...."....?....Plt....%."}.z...h.D.U...N
+15:41:11.392449 IP programming-lab-09.33036 > maa05s20-in-f2.1e100.net.https: Flags [.], ack 40, win 532, options [nop,nop,TS val 957693013 ecr 1906296], length 0
+E..4a.@.@..6
+
+.3...B.........7L.....P......
+9.<U...x
+15:41:11.392463 IP programming-lab-09.42750 > pnmaaa-az-in-f6.1e100.net.https: Flags [.], ack 40, win 532, options [nop,nop,TS val 2181095819 ecr 1906296], length 0
+E..4{$@.@.F.
+
+.3.........U.b........x......
+.......x
+15:41:11.393225 IP 142.251.150.119.https > programming-lab-09.51044: Flags [P.], seq 1:40, ack 39, win 1540, options [nop,nop,TS val 1906296 ecr 733700308], length 39
+E..[r.@.@......w
+
+.3...dWK..F{.............
+...x+.`....."..d?...Q...Az.=t%..k.$6..D..68[gL.
+15:41:11.393250 IP programming-lab-09.51044 > 142.251.150.119.https: Flags [.], ack 40, win 532, options [nop,nop,TS val 733700326 ecr 1906296], length 0
+E..4Z.@.@..M
+
+.3...w.d..F{..WK.F....0......
++.`....x
+^C
+12 packets captured
+12 packets received by filter
+0 packets dropped by kernel
