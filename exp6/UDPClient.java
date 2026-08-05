@@ -4,7 +4,7 @@ import java.util.*;
 public class UDPClient{
 	public static void main(String[] args) throws Exception{
 		DatagramSocket cs = new DatagramSocket();
-		InetAddress ip = InetAddress.getByName("local host");
+		InetAddress ip = InetAddress.getByName("localhost");
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the string");
