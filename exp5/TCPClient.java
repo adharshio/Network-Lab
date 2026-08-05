@@ -9,12 +9,20 @@ public class TCPClient{
 		DataInputStream dis =  new DataInputStream(s.getInputStream());
 		DataOutputStream dos =  new DataOutputStream(s.getOutputStream());
 		Scanner c = new Scanner(System.in);
-		System.out.println("Enter the output Matrix:");
+		System.out.println("Enter the order of Matrix:");
 		int n = c.nextInt();
 		dos.writeInt(n);
+		System.out.println("Enter the matrix:");
 		int[][] matrix = new int[n][n];
 		for(int i =0;i < n ;i++){
 			for(int j = 0;j < n;j++){
+				
+				matrix[i][j] = c.nextInt() ;
+			}
+		}
+		for(int i =0;i < n ;i++){
+			for(int j = 0;j < n;j++){
+				
 				dos.writeInt(matrix[i][j]) ;
 			}
 		}

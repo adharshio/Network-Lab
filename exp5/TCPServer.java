@@ -3,22 +3,22 @@ import java.io.*;
 
 public class TCPServer{
 
-	public static void main(String[] args){
+	public static void main(String[] args) throws Exception{
 		int port = 5000;
 		ServerSocket ss = new ServerSocket(5000);
 		System.out.println("Server Listening on : " + port);
 		
 		Socket socket = ss.accept();
 		System.out.println("Client connected");
-		DataInputStream in =  new DataInputStream(s.getInputStream());
-		DataOutputStream out =  new DataOutputStream(s.getOutputStream());
+		DataInputStream in =  new DataInputStream(socket.getInputStream());
+		DataOutputStream out =  new DataOutputStream(socket.getOutputStream());
 		
-		int n = in.readline();
+		int n = in.readInt();
 		int[][] mat = new int[n][n];	
 			
 		for(int i = 0;i<n;i++){
 			for(int j = 0;j<n;j++){
-				mat[i][j] = in.readline();		
+				mat[i][j] = in.readInt();		
 			}
 			}
 			
@@ -41,12 +41,12 @@ public class TCPServer{
 				out.writeUTF("Upper");
 			else if (isLower)
 				out.writeUTF("lower");
+			else
+				out.writeUTF("normal matrix");
 		
+		
+		in.close();
+		socket.close();
 		ss.close();
-		
-			
-		
-		
-		
 	}
 }

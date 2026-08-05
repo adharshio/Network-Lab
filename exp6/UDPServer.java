@@ -1,15 +1,14 @@
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
-import java.InetAddress;
-import java.util.HashMap;
-import java.util.Map;
+import java.net.*;
+
 
 public class UDPServer{
-	int port = 8080;
+	int port = 5000;
 	public static void main(String[] args) throws Exception{
 	 	DatagramSocket serverSocket = new DatagramSocket(5000);
 	 	byte[] receiveData = new byte[1024];
-	 	DatagramPacket receivePacket = new DatagramPacket(recieveData,recieveData.length);
+	 	DatagramPacket receivePacket = new DatagramPacket(receiveData,receiveData.length);
 	 	System.out.println("Server waiting:");
 	 	serverSocket.receive(receivePacket);
 	 	
@@ -25,6 +24,6 @@ public class UDPServer{
 	 	
 	 
 	 }}
-}
+
 
 
