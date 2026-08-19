@@ -1,0 +1,22 @@
+Packet Captured!
+Length: 108 bytes
+[Ethernet Header (14 bytes)]
+  Destination address: 33:33:00:01:00:02
+  Source address: 80:e8:6f:b3:3a:3e
+  Type: 0x86dd (IPv6)
+[IPv6 Header (40 bytes)]
+  Version: 6 (IPv6)
+  Traffic Class: 0x00
+  Flow Label: 0x00000
+  Payload length: 54 [bytes]
+  Next Header: 17 (UDP)
+  Hop Limit: 64
+  Source address: /fe80:0:0:0:82e8:6fff:feb3:3a3e
+  Destination address: /ff02:0:0:0:0:0:1:2
+[UDP Header (8 bytes)]
+  Source port: 546 (DHCPv6 Client)
+  Destination port: 547 (DHCPv6 Server)
+  Length: 54 [bytes]
+  Checksum: 0x4ad8
+[data (46 bytes)]
+  Hex stream: 0b 3d 4f 37 00 01 00 0a 00 03 00 01 80 e8 6f b3 3a 3e 00 08 00 02 00 64 00 06 00 12 00 20 00 17 00 18 00 1f 00 29 00 3b 00 3c 00 07 00 0c
